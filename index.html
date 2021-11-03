@@ -10,12 +10,6 @@
     </head>
 
     <body style="margin: 0; overflow: hidden;">
-        <div id="asset-loader">
-        </div>
-        <script>
-            window.onload = () => {
-                const el = document.getElementById('asset-loader');
-                el.innerHTML = `
         <a-scene
             renderer="logarithmicDepthBuffer: true;"
             embedded
@@ -31,7 +25,12 @@
                 ></a-entity>
             <a-camera gps-camera rotation-reader></a-camera>
         </a-scene>
-`;
+        <div id="asset-loader">
+        </div>
+        <script>
+            window.onload = () => {
+                const el = document.getElementById('asset-loader');
+                el.innerHTML = ``;
             }
         </script>
     </body>
